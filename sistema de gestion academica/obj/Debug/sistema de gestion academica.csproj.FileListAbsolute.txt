@@ -16,3 +16,21 @@ C:\Users\Esmarlyn\source\repos\sistema de gestion academica\sistema de gestion a
 C:\Users\Esmarlyn\source\repos\sistema de gestion academica\sistema de gestion academica\bin\Debug\Renci.SshNet.dll
 C:\Users\Esmarlyn\source\repos\sistema de gestion academica\sistema de gestion academica\bin\Debug\MySql.Data.xml
 C:\Users\Esmarlyn\source\repos\sistema de gestion academica\sistema de gestion academica\obj\Debug\sistema de gestion academica.csproj.CopyComplete
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\bin\Debug\sistema de gestion academica.exe.config
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\bin\Debug\sistema de gestion academica.exe
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\bin\Debug\sistema de gestion academica.pdb
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\bin\Debug\Google.Protobuf.dll
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\bin\Debug\BouncyCastle.Crypto.dll
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\bin\Debug\Ubiety.Dns.Core.dll
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\bin\Debug\Renci.SshNet.dll
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\bin\Debug\MySql.Data.xml
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.csproj.AssemblyReference.cache
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.csproj.SuggestedBindingRedirects.cache
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema_de_gestion_academica.Form1.resources
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema_de_gestion_academica.frmEstudiantes.resources
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema_de_gestion_academica.Properties.Resources.resources
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.csproj.GenerateResource.cache
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.csproj.CoreCompileInputs.cache
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.csproj.CopyComplete
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.exe
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.pdb

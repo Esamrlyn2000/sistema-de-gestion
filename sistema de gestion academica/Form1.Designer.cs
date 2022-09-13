@@ -51,17 +51,20 @@
             this.lblMatricula = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.btnSelec = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // pbImagen
             // 
+            this.pbImagen.Image = global::sistema_de_gestion_academica.Properties.Resources.blank_profile_picture_g6969457f6_1280;
             this.pbImagen.Location = new System.Drawing.Point(41, 60);
             this.pbImagen.Name = "pbImagen";
             this.pbImagen.Size = new System.Drawing.Size(100, 101);
             this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagen.TabIndex = 0;
             this.pbImagen.TabStop = false;
+            this.pbImagen.Click += new System.EventHandler(this.pbImagen_Click);
             // 
             // btnImagen
             // 
@@ -255,11 +258,22 @@
             this.btnSelec.UseVisualStyleBackColor = true;
             this.btnSelec.Click += new System.EventHandler(this.btnSelec_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(13, 399);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSelec);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.lblMatricula);
@@ -317,6 +331,7 @@
         private System.Windows.Forms.Label lblMatricula;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnSelec;
+        private System.Windows.Forms.Button button1;
     }
 }
 

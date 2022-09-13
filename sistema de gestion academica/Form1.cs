@@ -1,4 +1,5 @@
-﻿using sistema_de_gestion_academica.Clases;
+﻿using sistema_de_gestion_academica.Properties;
+using sistema_de_gestion_academica.Clases;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,38 +32,66 @@ namespace sistema_de_gestion_academica
 
         private void btnImagen_Click(object sender, EventArgs e)
         {
+            ClsEstudiante estudiante = new ClsEstudiante();
+
+
             string fechaN = dtpNacimiento.Value.ToString("dd/MM/yyyy");
             byte[] miFoto = ClsEstudiante.imageToByte(pbImagen.Image); ;
+            string categoria = null;
 
 
-            MySqlConnection conexionBD = conexion.ObtenerConexion();
-            conexionBD.Open();
-            MySqlCommand comando = new MySqlCommand();
-            comando.Connection = conexionBD;
-            comando.CommandText = ("insert into tb_estudiante (nombre,apaterno,amaterno,fecha,telefono,direccion,npaterno,nmaterno,Foto) values('" + txtNombre.Text + "','" + txtApaterno.Text + "','" + txtAmaterno.Text + "','" + fechaN + "','" + txtTelefono.Text + "','" + txtDireccion.Text + "','" + txtNpaterno.Text + "','" + txtNmaterno.Text + "','"+miFoto+"');");
-            comando.ExecuteNonQuery();
-            conexionBD.Close();
-            MessageBox.Show("Datos Registrado Correctamente");
-            txtNombre.Text = ""; 
-            txtApaterno.Text = "";
-            txtAmaterno.Text = "";
-            txtDireccion.Text = "";
-            txtNmaterno.Text = "";
-            txtNpaterno.Text = "";
-            txtTelefono.Text = "";
+            estudiante.nombre = txtNombre.Text;
+            estudiante.aPaterno = txtApaterno.Text;
+            estudiante.aMaterno = txtAmaterno.Text;
+            estudiante.fechaNc = fechaN;
+            estudiante.Telefono = txtTelefono.Text;
+            estudiante.direccion = txtDireccion.Text;
+            estudiante.nombrePadre = txtNpaterno.Text;
+            estudiante.nombreMadre = txtNmaterno.Text;
+            estudiante.categoria = categoria;
+            estudiante.foto = miFoto;
+            conexion.Insertar(estudiante);
+
+            limpiaCampos();
+           
+           
         }
 
         private void btnSelec_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Title = "Selecione una imagen";
-            dialog.Filter = "*.jpg|*.jpg";
+            dialog.Filter = "PNG(*.PNG)|*.PNG|JPG(*.JPG)|*.JPG|JPEG(*.JPEG)|*.JPEG|Todos los formatos|*.*";
             dialog.InitialDirectory = "C:\\";
 
             if(dialog.ShowDialog() == DialogResult.OK)
             {
                 pbImagen.ImageLocation = dialog.FileName;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmEstudiantes frm = new frmEstudiantes();
+            frm.ShowDialog(); 
+
+        }
+
+        private void limpiaCampos()
+        {
+            txtNombre.Text = "";
+            txtApaterno.Text = "";
+            txtAmaterno.Text = "";
+            txtDireccion.Text = "";
+            txtNmaterno.Text = "";
+            txtNpaterno.Text = "";
+            txtTelefono.Text = "";
+            pbImagen.Image = Resources.blank_profile_picture_g6969457f6_1280;
+        }
+
+        private void pbImagen_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -11,17 +11,18 @@ using System.Drawing;
 
 namespace sistema_de_gestion_academica.Clases
 {
-    internal class ClsEstudiante
+    public class ClsEstudiante
     {
-        public string nombre;
-        public string aPaterno;
-        public string aMaterno;
-        public string fechaNc;
-        public string Telefono;
-        public string direccion;
-        public string nombrePadre;
-        public string nombreMadre;
-        public string categoria;
+        public string nombre { get; set; }
+        public string aPaterno { get; set; }
+        public string aMaterno { get; set; }
+        public string fechaNc { get; set; }
+        public string Telefono { get; set; }
+        public string direccion { get; set; }
+        public string nombrePadre { get; set; }
+        public string nombreMadre { get; set; }
+        public string categoria { get; set; }
+        public byte[] foto { get; set; }
 
         //Convierte Byte a Imagen
         public static MemoryStream ByteToImagen(byte[] array)
