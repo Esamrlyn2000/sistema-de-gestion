@@ -28,5 +28,28 @@ namespace sistema_de_gestion_academica
         {  
             dgvEstudiantes.DataSource = conexion.actualizagrib();
         }
+
+        private void dgvEstudiantes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            /*int fila = dgvEstudiantes.CurrentRow.Index;
+            string nombre =dgvEstudiantes.Rows[fila].Cells[0].Value.ToString();  
+            string apellidop =dgvEstudiantes.Rows[fila].Cells[1].Value.ToString();  
+            string apellidom = dgvEstudiantes.Rows[fila].Cells[2].Value.ToString();
+            Form1 frm = new Form1();
+            frm.txtNombre.Text = nombre;
+            frm.txtApaterno.Text = apellidop;
+            frm.txtAmaterno.Text = apellidom;
+            frm.txtDireccion.Enabled = false;
+            frm.txtTelefono.Enabled = false;
+
+            frm.ShowDialog();*/
+           
+            
+        }
+
+        private void dgvEstudiantes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -52,6 +52,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.btnSelec = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +70,7 @@
             // 
             // btnImagen
             // 
-            this.btnImagen.Location = new System.Drawing.Point(686, 383);
+            this.btnImagen.Location = new System.Drawing.Point(510, 302);
             this.btnImagen.Name = "btnImagen";
             this.btnImagen.Size = new System.Drawing.Size(75, 23);
             this.btnImagen.TabIndex = 1;
@@ -260,7 +262,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(13, 399);
+            this.button1.Location = new System.Drawing.Point(12, 302);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 9;
@@ -268,11 +270,32 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(111, 302);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 9);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(633, 349);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSelec);
             this.Controls.Add(this.label10);
@@ -307,31 +330,32 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pbImagen;
         private System.Windows.Forms.Button btnImagen;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtApaterno;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtAmaterno;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtTelefono;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtNpaterno;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtNmaterno;
-        private System.Windows.Forms.DateTimePicker dtpNacimiento;
-        private System.Windows.Forms.ComboBox cbCategoria;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label lblMatricula;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button btnSelec;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        public System.Windows.Forms.PictureBox pbImagen;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox txtNombre;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox txtApaterno;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox txtAmaterno;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.TextBox txtTelefono;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.TextBox txtDireccion;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.TextBox txtNpaterno;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.TextBox txtNmaterno;
+        public System.Windows.Forms.DateTimePicker dtpNacimiento;
+        public System.Windows.Forms.ComboBox cbCategoria;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label lblMatricula;
+        public System.Windows.Forms.Button btnSelec;
+        private System.Windows.Forms.Button button2;
     }
 }
 

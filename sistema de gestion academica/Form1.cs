@@ -50,6 +50,7 @@ namespace sistema_de_gestion_academica
             estudiante.nombreMadre = txtNmaterno.Text;
             estudiante.categoria = categoria;
             estudiante.foto = miFoto;
+            estudiante.idEstudiante = ClsEstudiante.validaCodigo();
             conexion.Insertar(estudiante);
 
             limpiaCampos();
@@ -93,5 +94,26 @@ namespace sistema_de_gestion_academica
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine(000000 + 1);
+        }
+
+        public void loadEstudiante(ClsEstudiante estudiante)
+        {
+            txtNombre.Text = estudiante.nombre;
+            txtApaterno.Text = estudiante.aPaterno;
+            txtAmaterno.Text = estudiante.aMaterno;
+            dtpNacimiento.Text = estudiante.fechaNc;
+            txtTelefono.Text = estudiante.Telefono;
+            txtDireccion.Text = estudiante.direccion;
+            txtNpaterno.Text = estudiante.nombrePadre;
+            txtNmaterno.Text = estudiante.nombreMadre;
+            cbCategoria.Text = estudiante.categoria;
+            lblMatricula.Text = estudiante.idEstudiante;          
+        }
+
+
     }
 }

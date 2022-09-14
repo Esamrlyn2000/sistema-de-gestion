@@ -23,6 +23,7 @@ namespace sistema_de_gestion_academica.Clases
         public string nombreMadre { get; set; }
         public string categoria { get; set; }
         public byte[] foto { get; set; }
+        public string idEstudiante { get; set; }
 
         //Convierte Byte a Imagen
         public static MemoryStream ByteToImagen(byte[] array)
@@ -37,6 +38,46 @@ namespace sistema_de_gestion_academica.Clases
             imagenIn.Save(ms, ImageFormat.Jpeg);
 
             return ms.ToArray();
+        }
+
+        public static string validaCodigo()
+        {
+
+            string prefijoCodigo = "E-";
+            string codigo = "";           
+            string x = conexion.obtenerContador().ToString();
+
+            if(x.Length == 1)
+            {
+                codigo = prefijoCodigo + "00000" + (conexion.obtenerContador() + 1).ToString();
+            }
+            else
+                if (x.Length == 2)
+                {
+                    codigo = prefijoCodigo + "0000" + (conexion.obtenerContador() + 1).ToString();
+                }
+                else
+                    if (x.Length == 3)
+                    {
+                        codigo = prefijoCodigo + "000" + (conexion.obtenerContador() + 1).ToString();
+                    }
+                    else
+                        if (x.Length == 4)
+                        {
+                            codigo = prefijoCodigo + "00" + (conexion.obtenerContador() + 1).ToString();
+                        }
+                        else
+                            if (x.Length == 5)
+                            {
+                                codigo = prefijoCodigo + "0" + (conexion.obtenerContador() + 1).ToString();
+                            }
+                            else
+                                if (x.Length == 6)
+                                {
+                                    codigo = prefijoCodigo + (conexion.obtenerContador() + 1).ToString();
+                                }
+
+            return codigo;
         }
     }
 }

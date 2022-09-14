@@ -52,6 +52,7 @@ namespace sistema_de_gestion_academica.Clases
                 comando.Parameters.AddWithValue("@nmaterno", estudiante.nombreMadre);
                 comando.Parameters.AddWithValue("@categoria", estudiante.categoria);
                 comando.Parameters.AddWithValue("@foto", estudiante.foto);
+                comando.Parameters.AddWithValue("@idEstudiante", estudiante.idEstudiante);
 
                 //comando.CommandText = ("insert into tb_estudiante (nombre,apaterno,amaterno,fecha,telefono,direccion,npaterno,nmaterno,Foto) values('" + txtNombre.Text + "','" + txtApaterno.Text + "','" + txtAmaterno.Text + "','" + fechaN + "','" + txtTelefono.Text + "','" + txtDireccion.Text + "','" + txtNpaterno.Text + "','" + txtNmaterno.Text + "','"+miFoto+"');");
                 conexionBD.Open();
@@ -76,11 +77,68 @@ namespace sistema_de_gestion_academica.Clases
             conexionBD.Open();
 
             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
-
             DataTable dt = new DataTable();
-            adapter.Fill(dt);
+
+            try
+            {
+               
+                adapter.Fill(dt);
+                
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
             return dt;
-        } 
+        }
+        
+        public static int obtenerContador()
+        {
+            MySqlConnection conn = conexion.ObtenerConexion();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conn;
+            cmd.CommandType = CommandType.StoredProcedure;
+            //cmd.CommandText = "sp_cuentaEstudiante";
+            cmd.CommandText = "sp_getUltimo";
+            MySqlDataReader dr;
+
+            int resultado = 0;
+
+            try
+            {
+                conn.Open();
+
+                dr = cmd.ExecuteReader();
+
+                if (dr != null && dr.HasRows)
+                {
+                    dr.Read();
+                    resultado = dr.GetInt16(0);
+                }                             
+            }
+            catch (Exception ex)
+            {
+                if (ex.InnerException != null)
+                {
+                    MessageBox.Show(ex.InnerException.Message);
+                }
+                else
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
+            }
+            finally { conn.Close(); }
+
+            return resultado;
+
+ 
+            
+
+            
+
+        }
 
 
 
