@@ -31,6 +31,24 @@ namespace sistema_de_gestion_academica
 
         private void dgvEstudiantes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            Form1 form1 = new Form1();
+            form1.loadEstudiante(new ClsEstudiante 
+            {
+                idEstudiante = dgvEstudiantes.Rows[e.RowIndex].Cells[0].Value.ToString(),
+                nombre = dgvEstudiantes.Rows[e.RowIndex].Cells[1].Value.ToString(),
+                aPaterno = dgvEstudiantes.Rows[e.RowIndex].Cells[2].Value.ToString(),
+                aMaterno = dgvEstudiantes.Rows[e.RowIndex].Cells[3].Value.ToString(),
+                fechaNc = dgvEstudiantes.Rows[e.RowIndex].Cells[4].Value.ToString(),
+                Telefono = dgvEstudiantes.Rows[e.RowIndex].Cells[5].Value.ToString(),
+                direccion = dgvEstudiantes.Rows[e.RowIndex].Cells[6].Value.ToString(),
+                nombrePadre = dgvEstudiantes.Rows[e.RowIndex].Cells[7].Value.ToString(),
+                nombreMadre = dgvEstudiantes.Rows[e.RowIndex].Cells[8].Value.ToString(),
+                foto = (byte[])dgvEstudiantes.Rows[e.RowIndex].Cells[9].Value
+
+
+            });
+            form1.Show(this);
+            
             /*int fila = dgvEstudiantes.CurrentRow.Index;
             string nombre =dgvEstudiantes.Rows[fila].Cells[0].Value.ToString();  
             string apellidop =dgvEstudiantes.Rows[fila].Cells[1].Value.ToString();  
@@ -42,9 +60,7 @@ namespace sistema_de_gestion_academica
             frm.txtDireccion.Enabled = false;
             frm.txtTelefono.Enabled = false;
 
-            frm.ShowDialog();*/
-           
-            
+            frm.ShowDialog();*/                   
         }
 
         private void dgvEstudiantes_CellContentClick(object sender, DataGridViewCellEventArgs e)

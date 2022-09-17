@@ -111,7 +111,8 @@ namespace sistema_de_gestion_academica
             txtNpaterno.Text = estudiante.nombrePadre;
             txtNmaterno.Text = estudiante.nombreMadre;
             cbCategoria.Text = estudiante.categoria;
-            lblMatricula.Text = estudiante.idEstudiante;          
+            lblMatricula.Text = estudiante.idEstudiante;
+            pbImagen.Image = Image.FromStream(ClsEstudiante.ByteToImagen(estudiante.foto));
         }
 
 
