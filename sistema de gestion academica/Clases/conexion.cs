@@ -66,6 +66,45 @@ namespace sistema_de_gestion_academica.Clases
             }
         }
 
+
+        public static void actualizaEstudiante(this ClsEstudiante estudiante)
+        {
+            try
+            {
+                MySqlConnection conexionBD = conexion.ObtenerConexion();
+
+                MySqlCommand comando = new MySqlCommand();
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Connection = conexionBD;
+                comando.CommandText = "sp_updateEstudiante";
+                comando.Parameters.Clear();
+                comando.Parameters.AddWithValue("@nombre", estudiante.nombre);
+                comando.Parameters.AddWithValue("@apaterno", estudiante.aPaterno);
+                comando.Parameters.AddWithValue("@amaterno", estudiante.aMaterno);
+                comando.Parameters.AddWithValue("@fecha", estudiante.fechaNc);
+                comando.Parameters.AddWithValue("@telefono", estudiante.Telefono);
+                comando.Parameters.AddWithValue("@direccion", estudiante.direccion);
+                comando.Parameters.AddWithValue("@npaterno", estudiante.nombrePadre);
+                comando.Parameters.AddWithValue("@nmaterno", estudiante.nombreMadre);
+                comando.Parameters.AddWithValue("@categoria", estudiante.categoria);
+                comando.Parameters.AddWithValue("@foto", estudiante.foto);
+                comando.Parameters.AddWithValue("@idEstudiante", estudiante.idEstudiante);
+
+                conexionBD.Open();
+                comando.ExecuteNonQuery();
+                conexionBD.Close();
+                MessageBox.Show("Datos Registrado Correctamente");
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+
         public static DataTable actualizagrib()
         {
             MySqlConnection conexionBD = conexion.ObtenerConexion();

@@ -34,3 +34,5 @@ F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema d
 F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.csproj.CopyComplete
 F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.exe
 F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.pdb
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema_de_gestion_academica.Formularios.frmConfiguracion.resources
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema_de_gestion_academica.Formularios.frmInicio1.resources

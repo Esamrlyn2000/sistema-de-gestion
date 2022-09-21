@@ -44,8 +44,6 @@ namespace sistema_de_gestion_academica
                 nombrePadre = dgvEstudiantes.Rows[e.RowIndex].Cells[7].Value.ToString(),
                 nombreMadre = dgvEstudiantes.Rows[e.RowIndex].Cells[8].Value.ToString(),
                 foto = (byte[])dgvEstudiantes.Rows[e.RowIndex].Cells[9].Value
-
-
             });
             form1.Show(this);
             
@@ -65,7 +63,12 @@ namespace sistema_de_gestion_academica
 
         private void dgvEstudiantes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            
+        }
 
+        private void dgvEstudiantes_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            pbFoto.Image = Image.FromStream(ClsEstudiante.ByteToImagen((byte[])dgvEstudiantes.Rows[e.RowIndex].Cells[9].Value));
         }
     }
 }
