@@ -38,21 +38,37 @@ namespace sistema_de_gestion_academica
             string fechaN = dtpNacimiento.Value.ToString("dd/MM/yyyy");
             byte[] miFoto = ClsEstudiante.imageToByte(pbImagen.Image); ;
             string categoria = null;
-
-
-            estudiante.nombre = txtNombre.Text;
-            estudiante.aPaterno = txtApaterno.Text;
-            estudiante.aMaterno = txtAmaterno.Text;
-            estudiante.fechaNc = fechaN;
-            estudiante.Telefono = txtTelefono.Text;
-            estudiante.direccion = txtDireccion.Text;
-            estudiante.nombrePadre = txtNpaterno.Text;
-            estudiante.nombreMadre = txtNmaterno.Text;
-            estudiante.categoria = categoria;
-            estudiante.foto = miFoto;
-            estudiante.idEstudiante = ClsEstudiante.validaCodigo();
-            conexion.Insertar(estudiante);
-
+            if (lblMatricula.Text == "Matricula")
+            {
+                estudiante.nombre = txtNombre.Text;
+                estudiante.aPaterno = txtApaterno.Text;
+                estudiante.aMaterno = txtAmaterno.Text;
+                estudiante.fechaNc = fechaN;
+                estudiante.Telefono = txtTelefono.Text;
+                estudiante.direccion = txtDireccion.Text;
+                estudiante.nombrePadre = txtNpaterno.Text;
+                estudiante.nombreMadre = txtNmaterno.Text;
+                estudiante.categoria = categoria;
+                estudiante.foto = miFoto;
+                estudiante.idEstudiante = ClsEstudiante.validaCodigo();
+                conexion.Insertar(estudiante);
+            }
+            else
+            {
+                estudiante.nombre = txtNombre.Text;
+                estudiante.aPaterno = txtApaterno.Text;
+                estudiante.aMaterno = txtAmaterno.Text;
+                estudiante.fechaNc = fechaN;
+                estudiante.Telefono = txtTelefono.Text;
+                estudiante.direccion = txtDireccion.Text;
+                estudiante.nombrePadre = txtNpaterno.Text;
+                estudiante.nombreMadre = txtNmaterno.Text;
+                estudiante.categoria = categoria;
+                estudiante.foto = miFoto;
+                estudiante.idEstudiante = lblMatricula.Text;
+                conexion.actualizaEstudiante(estudiante);
+            }
+         
             limpiaCampos();
            
            
@@ -95,11 +111,6 @@ namespace sistema_de_gestion_academica
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Console.WriteLine(000000 + 1);
-        }
-
         public void loadEstudiante(ClsEstudiante estudiante)
         {
             txtNombre.Text = estudiante.nombre;
@@ -113,8 +124,8 @@ namespace sistema_de_gestion_academica
             cbCategoria.Text = estudiante.categoria;
             lblMatricula.Text = estudiante.idEstudiante;
             pbImagen.Image = Image.FromStream(ClsEstudiante.ByteToImagen(estudiante.foto));
-        }
 
+        }
 
     }
 }

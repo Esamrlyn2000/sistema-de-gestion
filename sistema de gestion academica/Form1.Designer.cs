@@ -52,8 +52,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.btnSelec = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +72,7 @@
             this.btnImagen.Name = "btnImagen";
             this.btnImagen.Size = new System.Drawing.Size(75, 23);
             this.btnImagen.TabIndex = 1;
-            this.btnImagen.Text = "Registrar";
+            this.btnImagen.Text = "Guardar";
             this.btnImagen.UseVisualStyleBackColor = true;
             this.btnImagen.Click += new System.EventHandler(this.btnImagen_Click);
             // 
@@ -235,9 +233,9 @@
             this.lblMatricula.AutoSize = true;
             this.lblMatricula.Location = new System.Drawing.Point(64, 44);
             this.lblMatricula.Name = "lblMatricula";
-            this.lblMatricula.Size = new System.Drawing.Size(41, 13);
+            this.lblMatricula.Size = new System.Drawing.Size(50, 13);
             this.lblMatricula.TabIndex = 6;
-            this.lblMatricula.Text = "label10";
+            this.lblMatricula.Text = "Matricula";
             // 
             // label10
             // 
@@ -270,32 +268,11 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(111, 302);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(12, 9);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(633, 349);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSelec);
             this.Controls.Add(this.label10);
@@ -333,7 +310,6 @@
         private System.Windows.Forms.Button btnImagen;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
         public System.Windows.Forms.PictureBox pbImagen;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox txtNombre;
@@ -355,7 +331,6 @@
         public System.Windows.Forms.Label label9;
         public System.Windows.Forms.Label lblMatricula;
         public System.Windows.Forms.Button btnSelec;
-        private System.Windows.Forms.Button button2;
     }
 }
 
