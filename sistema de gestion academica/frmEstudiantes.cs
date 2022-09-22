@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -27,6 +28,7 @@ namespace sistema_de_gestion_academica
         void actualizarGrid() 
         {  
             dgvEstudiantes.DataSource = conexion.actualizagrib();
+            lblTotal.Text = dgvEstudiantes.RowCount.ToString();
         }
 
         private void dgvEstudiantes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

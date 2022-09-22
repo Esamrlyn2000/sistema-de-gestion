@@ -70,6 +70,8 @@ namespace sistema_de_gestion_academica
             }
          
             limpiaCampos();
+            DialogResult = DialogResult.OK;
+            this.Close();
            
            
         }
@@ -127,5 +129,9 @@ namespace sistema_de_gestion_academica
 
         }
 
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.pbImagen = new System.Windows.Forms.PictureBox();
-            this.btnImagen = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,6 +52,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.btnSelec = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,15 +67,15 @@
             this.pbImagen.TabStop = false;
             this.pbImagen.Click += new System.EventHandler(this.pbImagen_Click);
             // 
-            // btnImagen
+            // btnGuardar
             // 
-            this.btnImagen.Location = new System.Drawing.Point(510, 302);
-            this.btnImagen.Name = "btnImagen";
-            this.btnImagen.Size = new System.Drawing.Size(75, 23);
-            this.btnImagen.TabIndex = 1;
-            this.btnImagen.Text = "Guardar";
-            this.btnImagen.UseVisualStyleBackColor = true;
-            this.btnImagen.Click += new System.EventHandler(this.btnImagen_Click);
+            this.btnGuardar.Location = new System.Drawing.Point(510, 302);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.TabIndex = 10;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnImagen_Click);
             // 
             // label1
             // 
@@ -91,7 +92,7 @@
             this.txtNombre.Location = new System.Drawing.Point(232, 103);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
-            this.txtNombre.TabIndex = 3;
+            this.txtNombre.TabIndex = 0;
             // 
             // label2
             // 
@@ -107,7 +108,7 @@
             this.txtApaterno.Location = new System.Drawing.Point(372, 104);
             this.txtApaterno.Name = "txtApaterno";
             this.txtApaterno.Size = new System.Drawing.Size(100, 20);
-            this.txtApaterno.TabIndex = 3;
+            this.txtApaterno.TabIndex = 1;
             // 
             // label3
             // 
@@ -123,7 +124,7 @@
             this.txtAmaterno.Location = new System.Drawing.Point(498, 104);
             this.txtAmaterno.Name = "txtAmaterno";
             this.txtAmaterno.Size = new System.Drawing.Size(100, 20);
-            this.txtAmaterno.TabIndex = 3;
+            this.txtAmaterno.TabIndex = 2;
             // 
             // label4
             // 
@@ -150,7 +151,7 @@
             this.txtTelefono.Location = new System.Drawing.Point(372, 169);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(100, 20);
-            this.txtTelefono.TabIndex = 3;
+            this.txtTelefono.TabIndex = 4;
             // 
             // label6
             // 
@@ -167,7 +168,7 @@
             this.txtDireccion.Location = new System.Drawing.Point(498, 167);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(100, 20);
-            this.txtDireccion.TabIndex = 3;
+            this.txtDireccion.TabIndex = 5;
             // 
             // label7
             // 
@@ -184,7 +185,7 @@
             this.txtNpaterno.Location = new System.Drawing.Point(232, 237);
             this.txtNpaterno.Name = "txtNpaterno";
             this.txtNpaterno.Size = new System.Drawing.Size(100, 20);
-            this.txtNpaterno.TabIndex = 3;
+            this.txtNpaterno.TabIndex = 6;
             // 
             // label8
             // 
@@ -201,14 +202,14 @@
             this.txtNmaterno.Location = new System.Drawing.Point(372, 237);
             this.txtNmaterno.Name = "txtNmaterno";
             this.txtNmaterno.Size = new System.Drawing.Size(100, 20);
-            this.txtNmaterno.TabIndex = 3;
+            this.txtNmaterno.TabIndex = 7;
             // 
             // dtpNacimiento
             // 
             this.dtpNacimiento.Location = new System.Drawing.Point(232, 170);
             this.dtpNacimiento.Name = "dtpNacimiento";
             this.dtpNacimiento.Size = new System.Drawing.Size(127, 20);
-            this.dtpNacimiento.TabIndex = 4;
+            this.dtpNacimiento.TabIndex = 3;
             // 
             // cbCategoria
             // 
@@ -216,7 +217,7 @@
             this.cbCategoria.Location = new System.Drawing.Point(509, 237);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(76, 21);
-            this.cbCategoria.TabIndex = 5;
+            this.cbCategoria.TabIndex = 8;
             // 
             // label9
             // 
@@ -253,7 +254,7 @@
             this.btnSelec.Location = new System.Drawing.Point(41, 167);
             this.btnSelec.Name = "btnSelec";
             this.btnSelec.Size = new System.Drawing.Size(101, 23);
-            this.btnSelec.TabIndex = 8;
+            this.btnSelec.TabIndex = 9;
             this.btnSelec.Text = "Selecionar";
             this.btnSelec.UseVisualStyleBackColor = true;
             this.btnSelec.Click += new System.EventHandler(this.btnSelec_Click);
@@ -263,16 +264,30 @@
             this.button1.Location = new System.Drawing.Point(12, 302);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
+            this.button1.TabIndex = 12;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCerrar.Location = new System.Drawing.Point(369, 301);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(75, 23);
+            this.btnCerrar.TabIndex = 11;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // Form1
             // 
+            this.AcceptButton = this.btnGuardar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnCerrar;
             this.ClientSize = new System.Drawing.Size(633, 349);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSelec);
             this.Controls.Add(this.label10);
@@ -295,10 +310,15 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnImagen);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.pbImagen);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(649, 388);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(649, 388);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Registro de estudiantes";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
             this.ResumeLayout(false);
@@ -307,7 +327,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnImagen;
+        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button1;
         public System.Windows.Forms.PictureBox pbImagen;
@@ -331,6 +351,7 @@
         public System.Windows.Forms.Label label9;
         public System.Windows.Forms.Label lblMatricula;
         public System.Windows.Forms.Button btnSelec;
+        private System.Windows.Forms.Button btnCerrar;
     }
 }
 

@@ -17,7 +17,7 @@ namespace sistema_de_gestion_academica
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmInicio1());
+            Application.Run(new MainForm());
         }
     }
 }
