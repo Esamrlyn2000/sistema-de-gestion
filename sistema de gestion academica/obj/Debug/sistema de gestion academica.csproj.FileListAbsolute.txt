@@ -36,24 +36,3 @@ F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema d
 F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.pdb
 F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema_de_gestion_academica.Formularios.frmConfiguracion.resources
 F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema_de_gestion_academica.Formularios.frmInicio1.resources
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\bin\Debug\sistema de gestion academica.exe.config
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\bin\Debug\sistema de gestion academica.exe
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\bin\Debug\sistema de gestion academica.pdb
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\bin\Debug\MySql.Data.dll
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\bin\Debug\Google.Protobuf.dll
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\bin\Debug\BouncyCastle.Crypto.dll
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\bin\Debug\Ubiety.Dns.Core.dll
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\bin\Debug\Renci.SshNet.dll
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\bin\Debug\MySql.Data.xml
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.csproj.AssemblyReference.cache
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.csproj.SuggestedBindingRedirects.cache
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema_de_gestion_academica.Form1.resources
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema_de_gestion_academica.Formularios.frmConfiguracion.resources
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema_de_gestion_academica.Formularios.frmInicio1.resources
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema_de_gestion_academica.frmEstudiantes.resources
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema_de_gestion_academica.Properties.Resources.resources
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.csproj.GenerateResource.cache
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.csproj.CoreCompileInputs.cache
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.csproj.CopyComplete
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.exe
-C:\Users\Esmarlyn\Source\Repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.pdb
