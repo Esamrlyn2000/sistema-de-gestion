@@ -66,6 +66,32 @@ namespace sistema_de_gestion_academica.Clases
             }
         }
 
+        public static void eliminaEstudiantes(string matricula)
+        {
+            try
+            {
+                MySqlConnection conexionBD = conexion.ObtenerConexion();
+
+                MySqlCommand comando = new MySqlCommand();
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Connection = conexionBD;
+                comando.CommandText = "sp_deleteEstudiante";
+                comando.Parameters.Clear();
+
+                comando.Parameters.AddWithValue("@idEstudiante", matricula);
+
+                conexionBD.Open();
+                comando.ExecuteNonQuery();
+                conexionBD.Close();
+                MessageBox.Show("Datos Eliminados Correctamente");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
 
         public static void actualizaEstudiante(this ClsEstudiante estudiante)
         {
@@ -170,13 +196,7 @@ namespace sistema_de_gestion_academica.Clases
             }
             finally { conn.Close(); }
 
-            return resultado;
-
- 
-            
-
-            
-
+            return resultado;        
         }
 
 

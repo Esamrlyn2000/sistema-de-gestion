@@ -25,7 +25,7 @@ namespace sistema_de_gestion_academica.Formularios
 
         private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 frm = new Form1();
+            frmEstudiantes frm = new frmEstudiantes();
             if (frm.ShowDialog() == DialogResult.OK)
             {
                 MessageBox.Show("Estudiante registrado con exito");

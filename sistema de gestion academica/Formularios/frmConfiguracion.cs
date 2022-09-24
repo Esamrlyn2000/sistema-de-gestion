@@ -22,5 +22,11 @@ namespace sistema_de_gestion_academica.Formularios
             frmEstudiantes frm = new frmEstudiantes();
             frm.ShowDialog();
         }
+
+        private void btnEstudiante_Click(object sender, EventArgs e)
+        {
+            frmEstudiantes frm = new frmEstudiantes();
+            frm.ShowDialog();
+        }
     }
 }

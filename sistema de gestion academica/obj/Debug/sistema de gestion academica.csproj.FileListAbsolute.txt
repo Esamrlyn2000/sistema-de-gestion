@@ -59,3 +59,5 @@ C:\Users\Esmarlyn\source\repos\Esamrlyn2000\sistema-de-gestion\sistema de gestio
 C:\Users\Esmarlyn\source\repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema de gestion academica.pdb
 C:\Users\Esmarlyn\source\repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema_de_gestion_academica.Formularios.MainForm.resources
 C:\Users\Esmarlyn\source\repos\Esamrlyn2000\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema_de_gestion_academica.Formularios.frmAbout.resources
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema_de_gestion_academica.Formularios.frmAbout.resources
+F:\Proyectos\sistema-de-gestion\sistema de gestion academica\obj\Debug\sistema_de_gestion_academica.Formularios.MainForm.resources
